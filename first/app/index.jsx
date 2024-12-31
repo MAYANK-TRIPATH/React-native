@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, ImageBackground } from 'react-native'
 import React from 'react'
 import Mayank from "@/assets/images/Mayank.png"
+import { Link} from "expo-router"
 
 const app = () => {
   return (
@@ -10,8 +11,11 @@ const app = () => {
     source={Mayank}
     resizeMode='cover'
     style={styles.image}
-    ></ImageBackground>
-      <Text style={styles.text}>Mayank Tripathi</Text>
+    >
+<Text style={styles.text}>Mayank Tripathi</Text>
+<Link style={styles.link} href="/explore">Link</Link>
+    </ImageBackground>
+      
     </View>
   )
 }
@@ -29,9 +33,16 @@ height: "100%",
 
   },
   text: {
-    color: 'black',
+    color: 'Red',
     fontSize: 42,
     fontWeight: 'bold',
+    flex: 1,
+  },
+  link: {
+    color: 'Blue',
+    fontSize: 42,
+    fontWeight: 'bold',
+    flex: 1,
   }
 
 
