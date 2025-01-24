@@ -5,9 +5,9 @@ import { Link } from 'expo-router'
 export default function About()  {
   return (
     <View>
-      <Text>This is about us page </Text>
+      <Text className="bg-slate-600 text-white">This is about us page </Text>
       <Link href={"/accounts"}>
-      <Text>Button to acc</Text>
+      <Text className="rounded-sm bg-blue-500">Button to acc</Text>
       </Link>
     </View>
   )

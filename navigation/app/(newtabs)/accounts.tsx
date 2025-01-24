@@ -5,8 +5,8 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 const accounts = () => {
   return (
     <SafeAreaView>
-    <View>
-      <Text>This is Accounts section</Text>
+    <View className="bg-slate-500 justify-center items-center">
+      <Text className="text-white font-semibold">This is Accounts section</Text>
     </View>
     </SafeAreaView>
   )
