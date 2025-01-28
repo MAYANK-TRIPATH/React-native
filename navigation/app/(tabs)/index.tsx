@@ -1,17 +1,32 @@
-import HomeScreen from '@/components/HomeScreen';
-import ProfileScreen from '@/components/ProfileScreen';
+import React from 'react';
+import { View } from 'react-native';
+import Profile from '@/components/Profile';
+import Projects from '@/components/Projects';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import "@/global.css"
+import "@/global.css";
 
 const Tab = createMaterialTopTabNavigator();
 
 export default function Index() {
   return (
-    <Tab.Navigator >
-      <Tab.Screen  name="Home" component={HomeScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
-    </Tab.Navigator>
-
+   
+    <View className="flex-1 ">
+      <Tab.Navigator
+        screenOptions={{
+          tabBarStyle: {
+            backgroundColor: "#0F172A", // Dark background for the TabBar
+          },
+          tabBarIndicatorStyle: {
+            backgroundColor: "#FFFFFF", // White indicator for dark mode
+          },
+          tabBarLabelStyle: {
+            color: "#FFFFFF", // White text for tab labels
+          },
+        }}
+      >
+        <Tab.Screen name="Profile" component={Profile} />
+        <Tab.Screen name="Projects" component={Projects} />
+      </Tab.Navigator>
+    </View>
   );
 }
-

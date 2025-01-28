@@ -1,9 +1,9 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-export default function ProfileScreen() {
+export default function Projects() {
   return (
-    <View>
+    <View >
       <Text>this is ProfileScreen as Components</Text>
     </View>
   )

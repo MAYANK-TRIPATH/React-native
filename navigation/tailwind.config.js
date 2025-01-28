@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // NOTE: Update this to include the paths to all of your component files.
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
+  darkMode: "class", // Use dark mode classes by default
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "#0F172A", // Example dark background color
+        text: "#FFFFFF", // Example text color for dark mode
+      },
+    },
   },
   plugins: [],
-}
+};
