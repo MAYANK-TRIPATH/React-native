@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function Projects() {
   return (
-    <View >
-      <Text>this is ProfileScreen as Components</Text>
+    <View className="bg-background text-text">
+      <Text className="text-text">Import component soon</Text>
     </View>
   )
 }

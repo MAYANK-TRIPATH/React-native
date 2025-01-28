@@ -5,7 +5,7 @@ import React from 'react';
 export default function Profile() {
   return (
     <View className="bg-background flex-1">
-      {/* Image positioned in the top-right corner */}
+      
       <Image
         source={require('@/assets/images/Mayank.png')}
         style={{

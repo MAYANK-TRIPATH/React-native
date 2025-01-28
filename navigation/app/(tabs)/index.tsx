@@ -10,7 +10,7 @@ const Tab = createMaterialTopTabNavigator();
 export default function Index() {
   return (
    
-    <View className="flex-1 ">
+    <View className="flex-1 bg-gray-700 ">
       <Tab.Navigator
         screenOptions={{
           tabBarStyle: {
